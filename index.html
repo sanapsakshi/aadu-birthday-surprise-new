@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#6e1c3a" />
+  <meta name="description" content="A little birthday surprise made with love, memories and a little bit of code." />
+  <title>Happy Birthday, My Love ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Great+Vibes&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="locked">
+  <div id="progressBar" aria-hidden="true"></div>
+  <div class="hearts" aria-hidden="true"></div>
+
+  <div class="intro" id="intro" role="dialog" aria-modal="true" aria-labelledby="introTitle">
+    <div class="intro-glow"></div>
+    <div class="intro-card">
+      <p class="tiny">14 • SEPTEMBER • A LITTLE SECRET</p>
+      <div class="gift">🎁</div>
+      <h1 id="introTitle">A little world<br><span>made only for you.</span></h1>
+      <p>Put your headphones on, turn the volume up a little, and tap below when you're ready. ❤️</p>
+      <button class="primary" id="enterBtn">Open the Surprise ✨</button>
+      <p class="tap-note">Best viewed slowly. Every scroll has a memory.</p>
+    </div>
+  </div>
+
+  <button class="music-fab" id="musicBtn" aria-label="Play romantic melody" title="Play / pause melody">♫</button>
+
+  <header class="hero">
+    <div class="hero-photo" aria-hidden="true"></div>
+    <div class="hero-shade" aria-hidden="true"></div>
+    <div class="hero-card reveal visible">
+      <span class="eyebrow">A LITTLE SURPRISE, JUST FOR YOU</span>
+      <h1>Happy Birthday,<br><span>My Favorite Person ❤️</span></h1>
+      <p>Today is about you — but this little page is about us, our memories, and every beautiful moment that brought us here.</p>
+      <button class="primary" id="startBtn">Open Our Story ✨</button>
+      <div class="scroll-cue"><span></span><small>scroll for our story</small></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="story section reveal" id="journey">
+      <div class="section-title">
+        <span>CHAPTER ONE</span>
+        <h2>How We Met 💕</h2>
+        <p>Some stories don't begin loudly. They begin with one simple moment that quietly changes everything.</p>
+      </div>
+      <div class="split-card cinematic-card">
+        <div class="photo-wrap tilt-left">
+          <img src="images/photo5.jpg" alt="A favorite memory together" loading="lazy" />
+          <span class="photo-sticker">where it all became special ♡</span>
+        </div>
+        <div>
+          <span class="chapter-no">01</span>
+          <h3>From strangers to something beautiful</h3>
+          <p>It all started so simply, but somehow that ordinary beginning became one of the most special parts of my life. Add your real story here — where you first met, what you noticed first, and the moment you knew this person was different.</p>
+          <p class="handwritten">“Some people arrive and suddenly ordinary days become memories.”</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section journey-section reveal">
+      <div class="section-title">
+        <span>CHAPTER TWO</span>
+        <h2>Our Journey 🌸</h2>
+        <p>Not one big moment — a hundred tiny ones that slowly became <em>us</em>.</p>
+      </div>
+      <div class="timeline">
+        <article><b>01</b><div class="timeline-icon">💬</div><h3>The First Hello</h3><p>That first conversation that started everything.</p></article>
+        <article><b>02</b><div class="timeline-icon">📸</div><h3>Our First Memories</h3><p>The smiles, calls, meetings, and little moments we still remember.</p></article>
+        <article><b>03</b><div class="timeline-icon">🤍</div><h3>Growing Together</h3><p>We learned each other, supported each other, and became closer.</p></article>
+        <article><b>04</b><div class="timeline-icon">✨</div><h3>Us, Today</h3><p>Still choosing each other, still creating memories, still growing.</p></article>
+      </div>
+    </section>
+
+    <section class="numbers-band reveal" aria-label="Our journey in numbers">
+      <div><strong>∞</strong><span>little memories</span></div>
+      <div><strong>2</strong><span>people, one story</span></div>
+      <div><strong>1</strong><span>favorite person</span></div>
+      <div><strong>100%</strong><span>worth every moment</span></div>
+    </section>
+
+    <section class="section reveal" id="gallerySection">
+      <div class="section-title">
+        <span>OUR FAVORITE MOMENTS</span>
+        <h2>Memory Gallery 📸</h2>
+        <p>Tap any photo to open it. These aren't just pictures — they're tiny pieces of our story.</p>
+      </div>
+      <div class="gallery">
+        <figure class="tall polaroid"><button class="photo-btn" data-src="images/photo1.jpg" aria-label="Open memory 1"><img src="images/photo1.jpg" alt="A romantic evening memory" loading="lazy"></button><figcaption>My favorite place is wherever we are together ❤️</figcaption></figure>
+        <figure class="polaroid"><button class="photo-btn" data-src="images/photo2.jpg" aria-label="Open memory 2"><img src="images/photo2.jpg" alt="A close selfie together" loading="lazy"></button><figcaption>The unplanned pictures always feel the most us.</figcaption></figure>
+        <figure class="polaroid"><button class="photo-btn" data-src="images/photo3.jpg" aria-label="Open memory 3"><img src="images/photo3.jpg" alt="An evening selfie together" loading="lazy"></button><figcaption>Just us, being us. 🤎</figcaption></figure>
+        <figure class="wide polaroid"><button class="photo-btn" data-src="images/photo4.jpg" aria-label="Open memory 4"><img src="images/photo4.jpg" alt="A bright selfie together" loading="lazy"></button><figcaption>One photo. A thousand feelings. ✨</figcaption></figure>
+        <figure class="polaroid"><button class="photo-btn" data-src="images/photo5.jpg" aria-label="Open memory 5"><img src="images/photo5.jpg" alt="A smiling selfie together" loading="lazy"></button><figcaption>Your smile will always be one of my favorite views.</figcaption></figure>
+        <figure class="wide polaroid"><button class="photo-btn" data-src="images/photo6.jpg" aria-label="Open memory 6"><img src="images/photo6.jpg" alt="A day out together" loading="lazy"></button><figcaption>More places. More laughter. More chapters to come. 💫</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="secret section reveal">
+      <div class="section-title">
+        <span>A SMALL SECRET</span>
+        <h2>One thing I don't say enough… 💌</h2>
+      </div>
+      <div class="secret-card" id="secretCard" tabindex="0" role="button" aria-label="Reveal secret message">
+        <div class="secret-front">
+          <div class="wax">♥</div>
+          <h3>Tap to open this note</h3>
+          <p>I saved this one just for you.</p>
+        </div>
+        <div class="secret-back">
+          <p>You make the ordinary feel special — random conversations, silly photos, quiet moments, and even the days when nothing exciting happens.</p>
+          <strong>And that is one of my favorite things about us. ❤️</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="now section reveal">
+      <div class="section-title">
+        <span>CHAPTER THREE</span>
+        <h2>Where We Are Now ❤️</h2>
+      </div>
+      <div class="split-card reverse">
+        <div class="photo-wrap tilt-right">
+          <img src="images/photo6.jpg" alt="Us now" loading="lazy" />
+          <span class="photo-sticker">my favorite chapter so far ✨</span>
+        </div>
+        <div>
+          <span class="chapter-no">03</span>
+          <h3>And somehow, here we are...</h3>
+          <p>After all the conversations, laughter, misunderstandings, support, and memories — I am simply grateful that our paths crossed. I hope this year brings you everything you deserve and many more moments for us to remember.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cake-section section reveal" id="cakeSection">
+      <div class="section-title">
+        <span>MAKE A WISH</span>
+        <h2>Before the final message… 🎂</h2>
+        <p>Tap each candle to blow it out. When all three are gone, your birthday surprise unlocks.</p>
+      </div>
+      <div class="cake-wrap">
+        <div class="cake" aria-label="Birthday cake with three candles">
+          <button class="candle" aria-label="Blow out candle 1"><i class="flame"></i></button>
+          <button class="candle" aria-label="Blow out candle 2"><i class="flame"></i></button>
+          <button class="candle" aria-label="Blow out candle 3"><i class="flame"></i></button>
+          <div class="cake-top"></div>
+          <div class="cake-layer layer-a"></div>
+          <div class="cake-layer layer-b">HAPPY BIRTHDAY</div>
+          <div class="plate"></div>
+        </div>
+        <p id="wishText" class="wish-text">Make a wish… then tap the candles ✨</p>
+      </div>
+    </section>
+
+    <section class="letter section reveal" id="finalLetter">
+      <div class="letter-lock" id="letterLock">
+        <div>🔒</div>
+        <p>Blow out all 3 candles to unlock the final message.</p>
+      </div>
+      <div class="letter-paper">
+        <span>FOR YOU, ON YOUR BIRTHDAY</span>
+        <h2>A little message from my heart 💌</h2>
+        <p>You make ordinary days feel special. Thank you for the memories we already have and for all the ones still waiting for us. I hope your birthday is full of happiness, peace, laughter, and everything that makes your heart happy.</p>
+        <p class="signature">Happy Birthday, My Love ❤️<br><b>— Adesh</b></p>
+        <button class="secondary" id="celebrateBtn">One last surprise 🎉</button>
+      </div>
+    </section>
+  </main>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close photo">×</button>
+    <img id="lightboxImg" src="" alt="Enlarged memory" />
+  </div>
+
+  <div class="finale" id="finale" aria-hidden="true">
+    <div class="finale-inner">
+      <p>and one more thing…</p>
+      <h2>I'm really glad<br><span>it's you. ❤️</span></h2>
+      <small>Happy Birthday ✨</small>
+      <button id="closeFinale">Back to our memories</button>
+    </div>
+  </div>
+
+  <footer>Made with ❤️, memories, and a little bit of code.</footer>
+  <script src="script.js"></script>
+</body>
+</html>
